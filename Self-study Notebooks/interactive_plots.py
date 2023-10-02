@@ -451,7 +451,7 @@ $s$, are calculated""",
                 
         def estimate(axs, xbar, s, mu, sigma):
             ax = axs['i']
-            ax.annotate(text=f'Estimate of population mean is\n$\\widehat{{\\mu}}$ = {xbar:.2f} $\\pm$ {s/np.sqrt(n):.2f}',
+            ax.annotate(text=f'$\\bar{{x}}$, $s$ and $n$ are used to\nestimate the population mean:\n$\\widehat{{\\mu}}$ = {xbar:.2f} $\\pm$ {s/np.sqrt(n):.2f}',
                 va='center', ha='center', fontsize=14, color='w',
                 bbox=dict(boxstyle="round", fc='C2', ec='none'),
                 xytext=(1, -0.1), xy=(-0.5, 2), xycoords='axes fraction', 
